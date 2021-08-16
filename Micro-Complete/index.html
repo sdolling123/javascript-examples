@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="bigWrapper">
+      <div class="header_input">
+        <h1 class="header">Micromobility Trip Data</h1>
+        <div class="inputLabel">
+          <label class="label"></label>
+          <input
+            class="inputClass"
+            id="input"
+            type="text"
+            placeholder="Enter dates here"
+            name="input"
+          />
+        </div>
+      </div>
+
+      <div class="cards-list">
+        <div class="card one">
+          <div class="card_title metric">
+            <p class="tt" id="totalTrips">1,000,000</p>
+          </div>
+          <div class="card_title title-white">
+            <p class="metricLabel">Total Trips</p>
+          </div>
+
+          <p class="actualInfo">
+            This is the total number of trips within the specified date range.
+          </p>
+
+          <p class="infoLink moreInfo">More Information</p>
+        </div>
+
+        <div class="card two">
+          <div class="card_title metric">
+            <p id="totalMiles">1,000,000</p>
+          </div>
+          <div class="card_title title-white">
+            <p class="metricLabel">Total Mileage</p>
+          </div>
+
+          <p class="actualInfo">
+            The cumulative miles for the trips taken during this period.
+          </p>
+
+          <p class="infoLink moreInfo">More Information</p>
+        </div>
+
+        <div class="card three">
+          <div class="card_title metric">
+            <p id="uniqueVehicles">1,000,000</p>
+          </div>
+          <div class="card_title title-white">
+            <p class="metricLabel">Unique Vehicle IDs</p>
+          </div>
+          <p class="actualInfo">
+            This excludes duplicate vehicles used for more than one ride.
+          </p>
+          <p class="infoLink moreInfo">More Information</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
